@@ -1,0 +1,16 @@
+resources:
+  pipelines:
+    kyc_demo_pipeline: 
+      name: kyclakelaoder
+      schema: bronze
+      continuous: false 
+      development: false
+      photon: false 
+      channel : CURRENT
+      catalog: assetbundles
+      serverless: true 
+      root_path: ../../src/pipelines/demopipelines
+      libraries:
+        - glob:
+            include : ../../src/pipelines/demopipelines/transformations/**
+      
