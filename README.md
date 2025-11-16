@@ -1,0 +1,1 @@
+# cogesak-assetbundles
